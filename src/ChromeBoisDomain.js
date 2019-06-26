@@ -22,10 +22,10 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 's', then it should call `resize` with '-'
    */
   handleKeyPress = (event) => {
-    event.preventDefault()
-     if (event.target === 'a') {
+
+     if (event.key === 'a') {
        resize('+')
-     } else if (event.target === 's') {
+     } else if (event.key === 's') {
        resize('-')
      }
   }
